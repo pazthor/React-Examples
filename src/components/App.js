@@ -2,6 +2,7 @@ import React from 'react';
 import unsplash from '../api/unsplash'
 import SearchBar from './SearchBar';
 import ImagesList from './ImagesList';
+import {Title, Wrapper, Buttons, TomatoButton} from './Title'
 
 class App extends React.Component{
   state = { images: []};
@@ -20,6 +21,19 @@ class App extends React.Component{
         <SearchBar onSubmit={this.onSearchSubmit} />
         Found: {this.state.images.length} images
         <ImagesList images={this.state.images} />
+        
+      <Wrapper>
+      <Title>
+        Hello World!
+      </Title>
+  </Wrapper>
+  <div>
+    <Buttons >
+      Normal Buttons
+    </Buttons>
+    <TomatoButton>Tomato Buttons</TomatoButton>
+  </div>
+
       </div>
     );
   }

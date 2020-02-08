@@ -8,6 +8,7 @@ module.exports = {
       ],
       '@babel/react',
     ],
+    plugins: ["babel-plugin-styled-components"],
     env: {
       test: {
         presets: [
